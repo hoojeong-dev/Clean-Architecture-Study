@@ -1,4 +1,4 @@
-package com.example.compose.clean_architecture_study.data.source
+package com.example.compose.clean_architecture_study.domain.interfaces
 
 import com.example.compose.clean_architecture_study.data.dao.GithubRepoDao
 

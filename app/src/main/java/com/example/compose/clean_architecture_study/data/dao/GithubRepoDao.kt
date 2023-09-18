@@ -1,6 +1,6 @@
 package com.example.compose.clean_architecture_study.data.dao
 
-import com.example.compose.clean_architecture_study.domain.GithubRepo
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepo
 import com.google.gson.annotations.SerializedName
 
 

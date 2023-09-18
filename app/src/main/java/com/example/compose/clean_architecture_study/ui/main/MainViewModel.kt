@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.compose.clean_architecture_study.domain.GetGithubUseCase
-import com.example.compose.clean_architecture_study.domain.GithubRepo
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

@@ -1,5 +1,7 @@
 package com.example.compose.clean_architecture_study.domain
 
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepo
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async

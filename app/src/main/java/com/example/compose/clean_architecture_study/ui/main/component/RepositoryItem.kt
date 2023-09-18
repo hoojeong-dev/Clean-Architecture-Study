@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
-import com.example.compose.clean_architecture_study.domain.GithubRepo
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepo
 import com.example.compose.clean_architecture_study.ui.theme.noRippleClickable
 
 

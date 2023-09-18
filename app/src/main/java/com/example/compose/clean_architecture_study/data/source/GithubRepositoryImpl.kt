@@ -1,9 +1,9 @@
 package com.example.compose.clean_architecture_study.data.source
 
-import com.example.compose.clean_architecture_study.domain.GithubRepo
-import com.example.compose.clean_architecture_study.domain.GithubRepository
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRemoteSource
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepo
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepository
 import javax.inject.Inject
-import javax.inject.Singleton
 
 
 class GithubRepositoryImpl @Inject constructor(

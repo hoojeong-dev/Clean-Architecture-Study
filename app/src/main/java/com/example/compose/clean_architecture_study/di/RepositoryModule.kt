@@ -1,7 +1,7 @@
 package com.example.compose.clean_architecture_study.di
 
 import com.example.compose.clean_architecture_study.data.source.GithubRepositoryImpl
-import com.example.compose.clean_architecture_study.domain.GithubRepository
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

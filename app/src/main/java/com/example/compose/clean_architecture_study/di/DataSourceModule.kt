@@ -1,6 +1,6 @@
 package com.example.compose.clean_architecture_study.di
 
-import com.example.compose.clean_architecture_study.data.source.GithubRemoteSource
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRemoteSource
 import com.example.compose.clean_architecture_study.data.source.GithubRemoteSourceImpl
 import dagger.Binds
 import dagger.Module

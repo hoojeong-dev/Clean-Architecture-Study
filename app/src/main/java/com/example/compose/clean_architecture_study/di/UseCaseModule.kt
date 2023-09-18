@@ -1,7 +1,7 @@
 package com.example.compose.clean_architecture_study.di
 
 import com.example.compose.clean_architecture_study.domain.GetGithubUseCase
-import com.example.compose.clean_architecture_study.domain.GithubRepository
+import com.example.compose.clean_architecture_study.domain.interfaces.GithubRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

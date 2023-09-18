@@ -1,4 +1,4 @@
-package com.example.compose.clean_architecture_study.domain
+package com.example.compose.clean_architecture_study.domain.interfaces
 
 
 interface GithubRepository {
