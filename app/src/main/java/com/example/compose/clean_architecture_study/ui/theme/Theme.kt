@@ -3,6 +3,7 @@ package com.example.compose.clean_architecture_study.ui.theme
 import android.app.Activity
 import android.os.Build
 import android.util.Log
+import android.view.WindowManager
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
@@ -45,14 +46,25 @@ fun CleanArchitectureStudyTheme(
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
-    Log.d(">>>", "CleanArchitectureStudyTheme: $colorScheme")
+
     val view = LocalView.current
     if (!view.isInEditMode) {
+
         SideEffect {
-            val window = (view.context as Activity).window
-            window.statusBarColor = Color(0xFFF8F8F8).toArgb()
-            window.navigationBarColor = Color(0xFFF8F8F8).toArgb()
-            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
+
+            (view.context as Activity).window.apply {
+
+                // transparent status bar
+                clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                statusBarColor = android.graphics.Color.TRANSPARENT
+                setDecorFitsSystemWindows(false)
+
+                statusBarColor = Color(0xFFF8F8F8).toArgb()
+                navigationBarColor = Color(0xFFF8F8F8).toArgb()
+                WindowCompat.getInsetsController(this, view).isAppearanceLightStatusBars = true
+                WindowCompat.getInsetsController(this, view).isAppearanceLightNavigationBars = true
+            }
         }
     }
 
